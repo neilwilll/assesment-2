@@ -22,9 +22,8 @@
 */
 
 //CODE HERE
-const greetUser= (USERNAME)=> {
-    
-}
+const greetUser = (username) => `Welcome back, ${username}!`;
+
 
 
 
@@ -53,9 +52,15 @@ const greetUser= (USERNAME)=> {
 const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
 //CODE HERE
-const canWeDeliver(zipCode){
-    canWeDeliver(85205)
-}
+function canWeDeliver(zipCode) {
+    const deliveryZips = ['85205', '85204', '85213'];
+    if (deliveryZips.includes(zipCode)) {
+      return 'You are eligible for delivery!';
+    } else {
+      return 'Sorry, we do not deliver to your area.';
+    }
+  }
+  
 
 
 
@@ -77,7 +82,16 @@ const canWeDeliver(zipCode){
 */
 
 // CODE HERE
-function canWeDeliverTwo
+function canWeDeliverTwo(zipCode) {
+    const deliveryZipCodes = [90001, 90002, 90003, 90004, 90005];
+    
+    if (deliveryZipCodes.includes(zipCode)) {
+      return "You are eligible for delivery!";
+    } else {
+      return "Sorry, we do not deliver to your area yet.";
+    }
+  }
+  
 
 
 //////////////////PROBLEM 3////////////////////

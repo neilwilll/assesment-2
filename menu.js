@@ -31,14 +31,15 @@
 */
 
 //CODE HERE
-const pizza={
-    name:"Cheese Pizza"
-    price:"3.49",
-    category:"pizza",
-    popularity:"2",
-    rating:"3",
-    tags:["cheese,"pizza","entree"]
-}
+const pizza = {
+    name: "Margherita",
+    price: 12.99,
+    category: "entree",
+    popularity: 5,
+    rating: 4.8,
+    tags: ["vegetarian", "gluten-free"]
+  };
+  
 
 
 
@@ -103,24 +104,49 @@ console.log(category);
 */
 
 //CODE HERE
-const foodArr= [
+const foodArr = [
     {
-     name:"Cheese Pizza"
-    price:"3.49",
-    category:"pizza",
-    popularity:"2",
-    rating:"3",
-    tags:["cheese,"pizza","entree"]
-},
-name: 'Loaded Nachos',
-    price: 8.99,
-    category: 'appetizer',
-    popularity: 9,
-    rating: 8.5,
-    tags:['appetizer', 'spicy', 'nachos','cheese'],
+      name: 'Pepperoni Pizza',
+      price: 12.99,
+      category: 'entree',
+      popularity: 8,
+      rating: 4.5,
+      tags: ['meat', 'spicy', 'classic']
+    },
     {
-
+      name: 'Cheeseburger',
+      price: 9.99,
+      category: 'entree',
+      popularity: 6,
+      rating: 3.9,
+      tags: ['meat', 'grilled', 'classic']
+    },
+    {
+      name: 'Caesar Salad',
+      price: 7.99,
+      category: 'appetizer',
+      popularity: 4,
+      rating: 4.2,
+      tags: ['vegetarian', 'healthy']
+    },
+    {
+      name: 'Garlic Bread',
+      price: 5.99,
+      category: 'appetizer',
+      popularity: 2,
+      rating: 4.0,
+      tags: ['bread', 'italian', 'garlic']
+    },
+    {
+      name: 'Chocolate Cake',
+      price: 6.99,
+      category: 'dessert',
+      popularity: 5,
+      rating: 4.8,
+      tags: ['sweet', 'chocolate']
     }
+  ];
+  
 
 
     
@@ -139,7 +165,10 @@ name: 'Loaded Nachos',
 */
 
 //CODE HERE
-const filteredFood=food.Arr.filter(food => 'prize')=> price.tags.incldes ("prize")
+function filterByTag(foodArr, tagName) {
+    return foodArr.filter(food => food.tags.includes(tagName));
+  }
+  
 
 // const filteredFood = foodArr.filter(/* CALLBACK HERE */)
 

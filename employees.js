@@ -20,10 +20,17 @@
 */
 
 //CODE HERE
-class Employee{
-    constructor(name,shifts)
-    myMethod(name,shifts)
-}
+class Employee {
+    constructor(name, shifts) {
+      this.name = name;
+      this.shifts = shifts;
+    }
+  
+    getSchedule() {
+      console.log(`${this.name} works on ${this.shifts}`);
+    }
+
+
 
 
 
@@ -38,7 +45,8 @@ class Employee{
 */
 
 //CODE HERE
-class.newInstance(empOne)
+const empOne = new Employee('Jess', 'weekday mornings, weekday afternoons');
+
 
 
 }
@@ -49,7 +57,8 @@ class.newInstance(empOne)
 */
 
 //CODEERE
-function getSchedule(empOne)
+empOne.getSchedule();
+
 
 
 
@@ -66,7 +75,9 @@ function getSchedule(empOne)
 */
 
 //CODE HERE
-Array.from(empOne);
+const empTwo = { ...empOne };
+empTwo.name = 'Nick';
+
 
 
 
@@ -94,19 +105,25 @@ Array.from(empOne);
 */
 
 //CODE HERE
-class Manager{
-    constructor(Employee)
-        super(Employee){
-   
-           }
-   
-   public class Main{
-       static void getEmployees(){
-           console.log(getEmployees)
-       }
+class Manager {
+    constructor(name, employees) {
+      this.name = name;
+      this.employees = employees;
+    }
+         getEmployees() {
+          console.log(`${this.name} manages ${this.employees}`);
+        }
+      
+        addEmployee(emp) {
+          this.employees.push(emp);
+        }
+
+      
+      
+      
    
        
-   }
+   
 
 
 
@@ -122,13 +139,30 @@ class Manager{
 */
 
 //CODE HERE
-class manager{
-    constructor(name, shifts,Employees)
-    this.name= Winston;
-    this.shifts= weekday mornings,weekday afternoons;
-    this.employees= Cece,Schmidt;
+class Employee {
+    constructor(name, shifts, employees) {
+      this.name = name;
+      this.shifts = shifts;
+      this.employees = employees;
+    }
+  
+    getSchedule() {
+      console.log(`${this.name} works on ${this.shifts}`);
+    }
+  
+    getEmployees() {
+      console.log(`${this.name} manages ${this.employees}`);
+    }
+  
+    addEmployee(emp) {
+      this.employees.push(emp);
+    }
+  }
+  
+  const manager = new Employee('Winston', 'weekday mornings, weekday afternoons', ['Cece', 'Schmidt']);
+  
 
-}
+
 
 
 /*
@@ -137,7 +171,8 @@ class manager{
 */
 
 //CODE HERE
-function getEmployees(Manager){
+manager.getEmployees();
+
 
 }
 
@@ -148,9 +183,9 @@ function getEmployees(Manager){
 */
 
 //CODE HERE 
-function(addEmployee){
-    manager(coach)
-}
+manager.addEmployee('Coach');
+
+
 
 /*
     Call the `getEmployees` method on the
@@ -159,6 +194,5 @@ function(addEmployee){
 */
 
 //CODE HERE
-function getEmployees{
-
-}
+manager.addEmployee('Jess');
+manager.getEmployees();

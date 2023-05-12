@@ -34,8 +34,10 @@ const cart = [
 ]
 
 //CODE HERE
-const reducer= (accumulator,currentValue) => accumulator,currentValue.price,0
-);
+const total = cart.reduce((accumulator, item) => {
+    return accumulator + item.price;
+  }, 0);
+
 
 
 // const summedPrice = cart.reduce(/* CALLBACK HERE */)
@@ -95,11 +97,18 @@ function calcFinalPrice(cartTotal,couponValue,tax){
 */
 
 //CODE HERE
-const restaurant= {
-    favorite food: (Pizza)
-    favorite drink: (Pepsi)
-    seating: (4)
-    kids: (2)
+const customer = {
+    name: 'John Doe',
+    email: 'johndoe@example.com',
+    phoneNumber: '555-555-5555',
+    address: {
+      street: '123 Main St',
+      city: 'Anytown',
+      state: 'CA',
+      zipCode: '12345'
+    }
+  };
+  
 
 
-}
+
